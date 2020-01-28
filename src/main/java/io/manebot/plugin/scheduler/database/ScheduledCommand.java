@@ -12,7 +12,7 @@ import java.sql.SQLException;
         indexes = {
                 @Index(columnList = "command"),
                 @Index(columnList = "interval"),
-                @Index(columnList = "next"),
+                @Index(columnList = "nextRun"),
                 @Index(columnList = "userId")
         }
 )
@@ -42,7 +42,7 @@ public class ScheduledCommand extends TimedRow {
     @JoinColumn(name = "userId")
     private io.manebot.database.model.User user;
 
-    @Column(length = 1024, nullable = false)
+    @Column(nullable = false)
     public String command;
 
     @Column(nullable = false)

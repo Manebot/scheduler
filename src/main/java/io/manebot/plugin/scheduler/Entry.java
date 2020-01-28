@@ -2,7 +2,6 @@ package io.manebot.plugin.scheduler;
 
 import io.manebot.database.Database;
 import io.manebot.plugin.Plugin;
-import io.manebot.plugin.PluginException;
 import io.manebot.plugin.PluginType;
 import io.manebot.plugin.java.PluginEntry;
 import io.manebot.plugin.scheduler.command.ScheduleCommand;
